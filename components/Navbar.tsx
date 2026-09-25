@@ -75,7 +75,7 @@ export default function Navbar() {
 
                 <div className="flex items-center gap-3">
                     <Link
-                        href="https://wa.me/6281234567890?text=Halo%20KitaCode,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20software/website."
+                        href="https://wa.me/6285253711498?text=Halo%20KitaCode,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20software/website."
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Konsultasi gratis pembuatan aplikasi dan website via WhatsApp"

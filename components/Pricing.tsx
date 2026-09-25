@@ -112,7 +112,7 @@ export default function Pricing() {
                         {/* CTA Link */}
                         <div className="pt-2">
                             <a
-                                href="https://wa.me/6281234567890?text=Halo%20KitaCode,%20saya%20ingin%20diskusi%20mengenai%20paket%20Custom%20Web%20%26%20App"
+                                href="https://wa.me/6285253711498?text=Halo%20KitaCode,%20saya%20ingin%20diskusi%20mengenai%20paket%20Custom%20Web%20%26%20App"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Konsultasikan pembuatan custom web dan e-commerce via WhatsApp KitaCode"

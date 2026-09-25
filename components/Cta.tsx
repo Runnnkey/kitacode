@@ -20,6 +20,6 @@ export default function Cta() {
             `*Catatan:* ${formData.notes || "-"}`;
 
         const encodedMessage = encodeURIComponent(message);
-        window.open(`https://wa.me/6281234567890?text=${encodedMessage}`, "_blank");
+        window.open(`https://wa.me/6285253711498?text=${encodedMessage}`, "_blank");
     };
 }
