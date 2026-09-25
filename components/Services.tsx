@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 interface ServiceItem {
     badge: string;
@@ -6,8 +6,6 @@ interface ServiceItem {
     title: string;
     description: string;
     features: string[];
-    price: string;
-    numericPrice: number;
     theme: {
         badgeBg: string;
         checkColor: string;
@@ -27,8 +25,6 @@ const services: ServiceItem[] = [
             "Integrasi Google Workspace Email Bisnis (@namaperusahaan.co.id)",
             "Peta interaktif kantor (Google Maps) & tombol WhatsApp direct dispatch",
         ],
-        price: "Rp 2.999.000",
-        numericPrice: 2999000,
         theme: {
             badgeBg: "bg-sky-100 text-sky-700 border-sky-200/50",
             checkColor: "text-sky-600",
@@ -46,8 +42,6 @@ const services: ServiceItem[] = [
             "Cek Ongkir Otomatis terintegrasi JNE, J&T, SiCepat, AnterAja",
             "Dashboard inventaris produk, diskon kupon flash-sale, & invoice PDF",
         ],
-        price: "Rp 6.499.000",
-        numericPrice: 6499000,
         theme: {
             badgeBg: "bg-amber-100 text-amber-800 border-amber-200/50",
             checkColor: "text-amber-500",
@@ -65,8 +59,6 @@ const services: ServiceItem[] = [
             "A/B testing layout & sticky floating CTA contact form",
             "Zero-lag loading: kecepatan akses super kilat mengurangi bounce rate",
         ],
-        price: "Rp 1.850.000",
-        numericPrice: 1850000,
         theme: {
             badgeBg: "bg-sky-100 text-sky-700 border-sky-200/50",
             checkColor: "text-sky-600",
@@ -84,8 +76,6 @@ const services: ServiceItem[] = [
             "Multi-Role Access Permissions, Audit Logs & Enkripsi Data AES-256",
             "Integrasi RESTful API pihak ketiga & otomasi Webhook",
         ],
-        price: "Rp 9.999.000",
-        numericPrice: 9999000,
         theme: {
             badgeBg: "bg-indigo-100 text-indigo-700 border-indigo-200/50",
             checkColor: "text-sky-600",
@@ -120,14 +110,13 @@ export default function Services() {
                     name: service.title,
                     description: service.description,
                 },
-                price: service.numericPrice,
                 priceCurrency: "IDR",
             })),
         },
     };
 
     return (
-        <section id="layanan" aria-labelledby="services-heading" className="py-20 bg-slate-50/30">
+        <section id="layanan" aria-labelledby="services-heading" className="pt-20 pb-2 bg-slate-50/30">
             {/* Inject Schema JSON-LD */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
@@ -199,25 +188,7 @@ export default function Services() {
                                 </div>
 
                                 {/* Card Footer: Price & CTA */}
-                                <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
-                                    <div>
-                                        <span className="text-[11px] font-medium text-slate-500 block">Mulai dari</span>
-                                        <span className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                                            {service.price}
-                                        </span>
-                                    </div>
-
-                                    <a
-                                        href={`https://wa.me/6281234567890?text=${waMessage}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label={`Konsultasikan pembuatan ${service.title} via WhatsApp`}
-                                        className={`inline-flex items-center gap-1.5 font-bold text-sm transition focus:outline-none focus:underline ${service.theme.ctaColor}`}
-                                    >
-                                        <span>Rencanakan Sekarang</span>
-                                        <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                                    </a>
-                                </div>
+                                <div className="pt-6 border-t border-slate-100 flex items-center justify-between"></div>
                             </article>
                         );
                     })}

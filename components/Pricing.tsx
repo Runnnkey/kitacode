@@ -47,7 +47,7 @@ export default function Pricing() {
                 <div className="max-w-2xl mx-auto">
                     <article className="relative bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-lg hover:shadow-xl transition flex flex-col justify-between">
                         {/* Highlight Badge */}
-                        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-sky-600 to-blue-600 text-white text-[11px] font-bold tracking-wider uppercase px-4 py-1 rounded-full shadow-sm">
+                        <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10 w-max max-w-[90%] bg-gradient-to-r from-sky-600 to-blue-600 text-white text-[10px] sm:text-[11px] font-bold tracking-wider uppercase px-3 sm:px-4 py-1 rounded-full shadow-md text-center truncate">
                             PILIHAN PENGEMBANGAN FLEKSIBEL
                         </div>
 
